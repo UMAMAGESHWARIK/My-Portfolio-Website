@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">UMAMAGESHWARI K</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"><b>UMAMAGESHWARI K</b></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile" style="background-color: rgb(157, 234, 211);">
+      <div class="section__pic-container">
+        <img src="./assets/profile pic.png" alt="UMAMAGESHWARI profile picture" width="100%" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">UMAMAGESHWARI K</h1>
+        <p class="section__text__p2">SOFTWARE ENGINEER</p>
+        
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('https://drive.google.com/file/d/1Qr-MH8h2-FX6acRG--uFDbuWPQG8vR_d/view?usp=sharing')"
+          >
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/umamageshwari-k'" 
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://www.github.com/UMAMAGESHWARIK'"
+          />
+        </div>
+      </div>
+    </section>
+    <br>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="assets/profile pic.png" 
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container" >
+          <div class="about-containers" >
+            <div class="details-container" style="background-color: rgb(157, 234, 211);">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Still Gaining</p>
+            </div>
+            <div class="details-container" style="background-color: rgb(157, 234, 211);">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelor of Engineering (CSE)<br /></p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p style="color:black; text-align: justify;" > 
+              I'm <strong>UMAMAGESHWARI K</strong>. I did my Graduation in B.E. CSE from UNIVERSITY COLLEGE OF ENGINEERING, KANCHEEPURAM with 8.31CGPA.
+             I'm a Passionate and dedicated aspiring Software Engineer.  
+             Proficient in HTML, CSS, JavaScript, Python, Django, SQL and I possess a solid foundation in web development and programming languages. 
+              Familiar with Git/GitHub for version control, I am actively learning Data Structures and Algorithms(DSA) concepts.  Eager to contribute my skills to real-world projects, I bring a proactive approach and commitment to continuous learning, ensuring I stay at the forefront of advancements in the field as I embark on my journey in Software engineering.
+            </p>
+           
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Internship Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Empty box for Full-Stack Development -->
+          <div class="details-container" style="background-color: rgb(157, 234, 211);">
+            <h2 class="experience-sub-title">FULL-STACK DEVELOPMENT AT
+            SHIASH INFO SOLUTIONS PRIVATE LIMITED</h2>
+             <p style="text-align: justify;">During my three-month internship in Python full-stack development, I acquired practical experience in building robust web applications. This role involved working extensively with frameworks like Flask to develop server-side logic and integrating it with dynamic front-end interfaces using HTML, CSS, and JavaScript. I also worked with databases, focusing on designing and managing SQL schemas to support application functionality. By collaborating with team members and handling real-world projects, I enhanced my problem-solving abilities and gained a comprehensive understanding of the full-stack development lifecycle.</p>
+          </div>
+          <!-- Empty box for Machine Learning -->
+          <div class="details-container" style="background-color: rgb(157, 234, 211);">
+            <h2 class="experience-sub-title">MACHINE LEARNING AT TCS iON</h2>
+            <p style="text-align: justify;">During my one-month internship with TCS iON, I worked on an innovative project focused on automating the detection and recognition of grammatical errors using machine learning. This involved leveraging natural language processing (NLP) techniques and developing models to analyze and identify language patterns. I explored various machine learning algorithms and tools, enhancing my ability to preprocess data, build predictive models, and validate results effectively. This project not only strengthened my technical expertise in machine learning but also improved my analytical thinking and project management skills.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project_1.jpeg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title" style="font-size: 170%;text-align:unset;">AUTOMATE DETECTION AND RECOGNITION OF GRAMMATICAL ERRORS USING MACHINE LEARNING</h2>
+            <div class="btn-container"><br><br>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/UMAMAGESHWARIK/Grammatical-Error-detector'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/UMAMAGESHWARIK/Grammatical-Error-detector'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container" style="background-color: rgb(157, 234, 211);">
+            <div class="article-container">
+              <img
+                src="assets/project_2.jpeg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title" style="font-size: 170%; text-align:unset">RECYCLING GHOST NETS INTO FEASIBLE PRODUCTS USING MACHINE LEARNING</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/UMAMAGESHWARIK/project'" >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/UMAMAGESHWARIK/project'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project_3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <br>
+            <h2 class="experience-sub-title project-title" style="font-size: 150%;">MY PORTFOLIO WEBSITE</h2><br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/UMAMAGESHWARIK/MY-PORTFOLIO'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/UMAMAGESHWARIK/MY-PORTFOLIO'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container" style="background-color: rgb(157, 234, 211);">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:umssmageshwari@gmail.com">umssmageshwari@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https:www.linkedin.com/in/umamageshwari-k">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 UMAMAGESHWARI K. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
